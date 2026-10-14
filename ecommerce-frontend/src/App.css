@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 5%;
+  background: #172554;
+  color: white;
+}
+
+.store-header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.cart {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.store-main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.filters input,
+.filters select {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 180px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.product-card h2 {
+  margin-top: 0;
+}
+
+.cart-section {
+  margin-top: 40px;
+  padding: 22px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item p {
+  margin-bottom: 0;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .store-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cart-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.product-actions button {
+  flex: 1;
+  min-width: 75px;
+}
+
+.edit-btn {
+  background-color: #0f766e;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.add-product-section {
+  margin-bottom: 30px;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.product-form input,
+.product-form textarea {
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.product-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
